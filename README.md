@@ -1,20 +1,86 @@
-<<<<<<< HEAD
-# React + Vite
+# 💳 PayFlow Payments
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern payment management dashboard built using **React** and **Vite**. PayFlow provides a simple and clean interface for viewing payments, managing transactions, and tracking payment activity.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔐 Login page
+- 📊 Interactive payment dashboard
+- 💳 Payment management page
+- 🔎 Search payments by payment ID, customer, or email
+- 🎯 Filter payments by status
+- 💸 Transaction history page
+- 📈 Payment statistics dashboard
+- 🟢 Payment status indicators
+- 📱 Responsive user interface
+- 🧭 Navigation using React Router
 
-## React Compiler
+## 🖥️ Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🏠 Home Page
+The landing page introduces the PayFlow payment platform and allows users to start using the application.
 
-## Expanding the Oxlint configuration
+### 🔐 Login Page
+Users can access the PayFlow dashboard through the login interface.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-=======
-# playflow-playments
->>>>>>> b8b61bcce18a7a0934a062dbb29ef372acbd69f1
+### 📊 Dashboard
+The dashboard displays:
+
+- Total payment volume
+- Successful payments
+- Failed payments
+- Payment success rate
+- Payment activity
+- Recent payments
+
+### 💳 Payments
+The Payments page allows users to:
+
+- View all payments
+- Search for payments
+- Filter payments by status
+- View customer information
+- Track payment amounts and payment dates
+
+### 💸 Transactions
+The Transactions page displays the transaction history, including:
+
+- Transaction ID
+- Customer
+- Transaction type
+- Amount
+- Status
+- Date
+
+## 🛠️ Technologies Used
+
+- React
+- Vite
+- React Router DOM
+- JavaScript
+- HTML
+- CSS
+
+## 📂 Project Structure
+
+```text
+src/
+│
+├── App.jsx
+├── App.css
+├── main.jsx
+├── index.css
+│
+├── login.jsx
+├── Dashboard.jsx
+├── Dashboard.css
+│
+├── PaymentsPage.jsx
+├── PaymentsPage.css
+│
+├── Transactions.jsx
+├── Transactions.css
+│
+├── Demo.jsx
+│
+└── assets/
