@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #171717;
+  background: #ffffff;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.navbar {
+  max-width: 1200px;
+  height: 80px;
+  margin: auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #635bff;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.sign-in {
+  border: none;
+  background: transparent;
+  padding: 10px 16px;
+}
+
+.start-button,
+.primary-button {
+  border: none;
+  background: #635bff;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.hero {
+  text-align: center;
+  padding: 110px 20px 80px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 50px;
+  background: #f3f2ff;
+  color: #635bff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-dot,
+.live-dot {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+}
+
+.hero h1 {
+  margin: 24px 0;
+  font-size: clamp(48px, 7vw, 76px);
+  line-height: 1.05;
+  letter-spacing: -3px;
+}
+
+.hero h1 span {
+  color: #635bff;
+}
+
+.hero-text {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.secondary-button {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+.dashboard-preview {
+  max-width: 1050px;
+  margin: 0 auto 100px;
+  padding: 35px;
+  border: 1px solid #e7e7e7;
+  border-radius: 18px;
+  background: #fafafa;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+}
+
+.preview-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preview-label {
+  color: #888;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.preview-top h2 {
+  margin: 8px 0 0;
+  font-size: 26px;
+}
+
+.live-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+  font-size: 13px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 35px 0;
+}
+
+.stat-card {
+  background: white;
+  padding: 24px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+
+.stat-card p {
+  margin: 0;
+  color: #777;
+  font-size: 13px;
+}
+
+.stat-card h3 {
+  margin: 12px 0;
+  font-size: 28px;
+}
+
+.growth {
+  color: #16a34a;
+  font-size: 13px;
+}
+
+.payment-list {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.payment-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-list-header h3 {
+  margin: 0;
+}
+
+.payment-list-header button {
+  border: none;
+  background: transparent;
+  color: #635bff;
+  font-weight: 600;
+}
+
+.payment-row {
+  display: grid;
+  grid-template-columns: 1fr 140px 120px;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.payment-row:last-child {
+  border-bottom: none;
+}
+
+.payment-row p {
+  margin: 5px 0 0;
+  color: #888;
+  font-size: 13px;
+}
+
+.payment-status {
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.success {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.processing {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.failed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-preview {
+    margin: 0 16px 60px;
+    padding: 20px;
+  }
+
+  .preview-top {
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .payment-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .payment-status {
+    width: fit-content;
+  }
+}

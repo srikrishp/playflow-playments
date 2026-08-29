@@ -1,0 +1,144 @@
+.transactions-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+  color: #1c1c1f;
+}
+
+.transactions-navbar {
+  height: 72px;
+  background: white;
+  border-bottom: 1px solid #e8e8ec;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transactions-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.back-dashboard-btn {
+  border: 1px solid #e1e2e6;
+  background: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.transactions-content {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 50px 40px;
+}
+
+.transactions-heading {
+  margin-bottom: 32px;
+}
+
+.transactions-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #635bff;
+}
+
+.transactions-heading h1 {
+  margin: 10px 0;
+  font-size: 32px;
+}
+
+.transactions-heading p:last-child {
+  color: #777d88;
+}
+
+.transactions-card {
+  background: white;
+  border: 1px solid #e8e8ec;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.transactions-card-header {
+  padding: 22px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eeeeef;
+}
+
+.transactions-card-header h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.transactions-card-header span {
+  color: #777d88;
+  font-size: 13px;
+}
+
+.transactions-table-container {
+  overflow-x: auto;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table th {
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 11px;
+  color: #8c909a;
+  background: #fafafa;
+}
+
+.transactions-table td {
+  padding: 18px 20px;
+  border-top: 1px solid #eeeeef;
+  font-size: 14px;
+}
+
+.transaction-status {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.completed {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.processing {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.failed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+@media (max-width: 700px) {
+  .transactions-navbar {
+    padding: 0 20px;
+  }
+
+  .transactions-content {
+    padding: 30px 16px;
+  }
+
+  .transactions-heading h1 {
+    font-size: 26px;
+  }
+}

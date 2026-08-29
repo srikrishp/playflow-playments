@@ -1,0 +1,274 @@
+/* =========================
+   PAYMENTS PAGE
+========================= */
+
+.payments-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+  color: #1c1c1f;
+}
+
+/* =========================
+   TOP NAVIGATION
+========================= */
+
+.payments-navbar {
+  height: 72px;
+  background: white;
+  border-bottom: 1px solid #e8e8ec;
+  padding: 0 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payments-logo {
+  cursor: pointer;
+}
+
+.payments-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.payments-nav-right button:first-child {
+  border: 1px solid #e1e2e6;
+  background: white;
+  color: #333;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.create-payment-btn {
+  border: none;
+  background: #635bff;
+  color: white;
+  padding: 11px 17px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.payments-content {
+  max-width: 1400px;
+  margin: auto;
+  padding: 40px;
+}
+
+.payments-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.payments-heading h1 {
+  margin: 8px 0;
+  font-size: 32px;
+}
+
+.payments-heading p:last-child {
+  margin: 0;
+  color: #777;
+}
+
+/* =========================
+   SEARCH AND FILTER
+========================= */
+
+.payments-controls {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 22px;
+}
+
+.payments-search {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border: 1px solid #e1e2e6;
+  padding: 12px 15px;
+  border-radius: 8px;
+}
+
+.payments-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  background: transparent;
+}
+
+.payments-controls select {
+  min-width: 160px;
+  border: 1px solid #e1e2e6;
+  background: white;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* =========================
+   PAYMENTS CARD
+========================= */
+
+.payments-card {
+  background: white;
+  border: 1px solid #e8e8ec;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.payments-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.payments-card-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.payments-card-header p {
+  margin: 7px 0 0;
+  color: #8b8f99;
+  font-size: 13px;
+}
+
+/* =========================
+   PAYMENTS TABLE
+========================= */
+
+.full-payments-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.full-payments-table th {
+  text-align: left;
+  color: #969aa4;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 14px;
+}
+
+.full-payments-table td {
+  padding: 16px 14px;
+  border-top: 1px solid #eeeeef;
+  font-size: 13px;
+}
+
+.full-payments-table tbody tr {
+  transition: background 0.2s;
+}
+
+.full-payments-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.payment-email {
+  color: #777d88;
+}
+
+/* =========================
+   STATUS BADGES
+========================= */
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.succeeded {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.processing {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.failed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* =========================
+   NO RESULTS
+========================= */
+
+.no-results {
+  text-align: center;
+  padding: 40px 20px;
+  color: #777d88;
+  font-size: 15px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 750px) {
+  .payments-navbar {
+    padding: 0 20px;
+  }
+
+  .payments-navbar .create-payment-btn {
+    display: none;
+  }
+
+  .payments-content {
+    padding: 20px;
+  }
+
+  .payments-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .payments-controls {
+    flex-direction: column;
+  }
+
+  .payments-search {
+    max-width: none;
+    width: 100%;
+  }
+
+  .payments-controls select {
+    width: 100%;
+  }
+
+  .payments-card {
+    padding: 16px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .full-payments-table {
+    min-width: 850px;
+  }
+}
